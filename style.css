@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+height: 100vh;
+}
+
+section{
+    height: 100%;
+    display: flex;
+    flex-flow: row;
+}
+
+nav{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    background-color: #F8F4F4;
+    padding: 5px;
+}
+
+p{
+    background-color: #C4C4C4;
+    padding: 5px;
+    border-radius: 3px;
+    margin: 4px;
+    text-align: center;
+}
+
+div p{ 
+    width: 40px;
+    height: 40px;
+    border-radius: 70px;
+ }
+
+section>article{
+    flex: 2 30%;
+    background-color: #FFFFFF;
+}
+
+#search{
+    margin: 30px;
+}
+
+section>aside{
+    flex: 2;
+    background-color: #C4C4C4;
+}
+
+section>aside div{
+    margin: 30px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border-radius: 0%;
+}
+
+
+
+
+/*Media Query Mobile*/
+
+@media only screen and (max-width: 400px){
+section{
+    display: flex;
+    flex-flow: column;
+}
+
+nav{
+    display: flex;
+    flex-flow: row;
+}
+
+p{
+    background-color: #C4C4C4;
+    border-radius: 3px;
+}
+
+div p{
+display: none;
+}
+
+hr{
+    display: none;
+}
+
+#search{
+    margin-top: 30px;
+}
+
+section>aside{
+    background-color: #FFFFFF;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+section>aside div{
+    background-color: #C4C4C4;
+    width: 40px;
+    height: 40px;
+    border-radius: 70px;
+}
+}
